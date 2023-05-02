@@ -1,0 +1,32 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import pulsar from './pulsar_orig.png'
+
+export const meta = {
+  author: 'Daniel Reardon',
+  date: '2022-07-19',
+  title:
+    'Observing twinkling pulsars to understand mysterious interstellar plasma',
+  description:
+    'Pulsars—rapidly-spinning remnants of stars that flash like a lighthouse—occasionally show extreme variations in brightness. Scientists predict that these short bursts of brightness happen because dense regions of interstellar plasma (the hot gas between stars) scatter the radio waves emitted by the pulsar.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+<Image src={pulsar} alt="" />
+
+Pulsars—rapidly-spinning remnants of stars that flash like a lighthouse—occasionally show extreme variations in brightness. Scientists predict that these short bursts of brightness happen because dense regions of interstellar plasma (the hot gas between stars) scatter the radio waves emitted by the pulsar. However, we still don’t know where the energy sources required to form and sustain these dense plasma regions come from. To better understand these interstellar formations, we require more detailed observations of their small-scale structure, and a promising avenue for this is in the scintillation, or “twinkling,” of pulsars.
+
+When a pulsar’s radio waves are scattered by the interstellar plasma, the separate waves interfere and create an interference pattern on the Earth. As the Earth, pulsar, and plasma move relative to each other, this pattern is observed as brightness variations in time and in frequency: the dynamic spectrum. This is scintillation, or “twinkling”. Thanks to the point-like nature of pulsar signals, the scattering and twinkling occurs in small regions of the plasma. Following specialised signal processing of the dynamic spectrum, we can observe striking parabolic features known as scintillation arcs that are related to the image of the pulsar’s scattered radiation on the sky.
+
+One particular pulsar, called J1603-7202, underwent extreme scattering in 2006, making it an exciting target for examining these dense plasma regions. However, the pulsar’s trajectory still hasn’t been determined as it orbits another compact star called a white dwarf in a face-on orbit, and scientists don’t have alternative methods to measure it in this situation. Fortunately, scintillation arcs serve a double purpose: their curvatures are related to the pulsar’s velocity, as well as the distance to the pulsar and the plasma. How the pulsar’s velocity changes as it orbits depends on the orbit’s orientation in space. Therefore, in the case of pulsar J1603-7202, we calculated the changes in the curvature of the arcs over time to determine the orientation.
+
+The measurements we obtained for the orbit of J1603-7202 are a significant improvement compared to previous analyses. This demonstrates the viability of scintillation in supplementing alternative methods. We measured the distance to the plasma and showed that it was about three-quarters of the distance to the pulsar, from Earth. This does not seem to coincide with the positions of any known stars or interstellar gas clouds. Pulsar scintillation studies often explore structures such as this, which are otherwise invisible. The question therefore remains open: what is the source of the plasma that scatters the pulsar's radiation?
+
+Finally, using our orbit measurement, we are able to estimate the mass of J1603-7202’s orbital companion, which is about half the mass of the Sun. When considered alongside the highly circular orbit of J160-7202, this implies the companion is likely a stellar remnant composed of carbon and oxygen - a rarer find around a pulsar than the more common helium-based remnants.
+
+As we now possess a near-complete model of the orbit, it’s now possible to transform scintillation observations of J1603-7202 into on-sky scattered images and map the interstellar plasma at Solar System scales. Creating images of the physical structures that cause extreme scattering of radio waves may give us a better understanding of how such dense regions form and of the role the interstellar plasma plays in the evolution of galaxies.
+
+Link to study: https://arxiv.org/abs/2204.11077
+
+Written by PhD student Kris Walker (ICRAR-UWA) and Dr Daniel Reardon (OzGrav-Swinburne University).
