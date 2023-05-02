@@ -30,4 +30,4 @@ You can start editing this template by modifying the files in the `/src` folder.
 
 ## Publishing a new article
 
-You can create a new article by adding a `my-article-ulr.md` file in the `/pages/articles` folder. The site will auto-update as you edit these files. If you want to add pictures to the article you create a new foled `my-article-ulr` instead with `index.mdx` and picture files in it.
+You can create a new article by adding a `my-article-url.md` file in the `/pages/articles` folder. The site will auto-update as you edit these files. If you want to add pictures to the article you create a new foled `my-article-url` instead with `index.mdx` and picture files in it.
