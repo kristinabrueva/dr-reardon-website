@@ -33,6 +33,7 @@ export function ArticleLayout({
   return (
     <>
       <Head>
+        <link rel="preload" href={meta.image} as="image" />
         <title>{`${meta.title} - Daniel Reardon`}</title>
         <meta name="description" content={meta.description} />
         <meta property="og:image" content={meta.image} />
