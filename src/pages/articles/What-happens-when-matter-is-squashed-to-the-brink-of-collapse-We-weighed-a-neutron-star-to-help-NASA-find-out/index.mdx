@@ -1,0 +1,79 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import supernova from './NICERLandscape.jpg'
+
+export const meta = {
+  author: 'Daniel Reardon',
+  date: '2025-02-11',
+  image:
+    '../pages/articles/What-happens-when-matter-is-squashed-to-the-brink-of-collapse-We-weighed-a-neutron-star-to-help-NASA-find-out/NICERLandscape.jpg',
+  title: 'What happens when matter is squashed to the brink of collapse? We weighed a neutron star to help NASA find out',
+  description:
+    `Neutron stars are some of the most extreme objects in the universe. Formed from the collapsed cores of supergiant stars, they weigh more than our Sun and yet are compressed into a sphere the size of a city. The dense cores of these exotic 
+stars contain matter squashed into unique states that we can\'t possibly replicate and study on Earth. That\'s why NASA is on a mission to study neutron stars and learn about the physics that governs the matter inside them. My colleagues and I 
+have been helping them out. We used radio signals from a fast-spinning neutron star to measure its mass. This enabled scientists working with NASA data to measure the star\'s radius, which in turn gave us the most precise information yet about 
+the strange matter inside.`,
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+<figure>
+  <center>
+    <Image src={supernova} alt="Artist's illustration of a Shapiro delay" />
+  </center>
+  <figcaption align="center">
+    Artist's impression of a white dwarf star orbiting a pulsar and producing a gravitational time delay. Carl Knox / Swinburne / OzGrav
+  </figcaption>
+</figure>
+
+Neutron stars are some of the most extreme objects in the universe. Formed from the collapsed cores of supergiant stars, they weigh more than our Sun and yet are compressed into a sphere the size of a city.
+
+The dense cores of these exotic stars contain matter squashed into unique states that we can't possibly replicate and study on Earth. That's why NASA is on a mission to study neutron stars and learn about the physics that governs the matter inside them.
+
+My colleagues and I have been helping them out. We used radio signals from a fast-spinning neutron star to measure its mass. This enabled scientists working with NASA data to measure the star's radius, which in turn gave us the most precise information yet about the strange matter inside.
+
+Matter in the core of neutron stars is even denser than the nucleus of an atom. As the densest stable form of matter in the universe, it is squashed to its limit and on the brink of collapse into a black hole. Understanding how matter behaves under these conditions is a key test of our theories of fundamental physics.
+
+NASA's Neutron star Interior Composition ExploreR (NICER) mission is trying to solve the mysteries of this extreme matter.
+
+NICER is an X-ray telescope on the International Space Station. It detects X-rays coming from hot spots on the surface of neutron stars where temperatures can reach millions of degrees.
+
+Scientists model the timing and energies of these X-rays to map the hot spots and determine the mass and size of the neutron stars.
+
+Knowing how the sizes of neutron stars relate to their masses will reveal the "equation of state" of the matter in their cores. This tells scientists how soft or hard - how "squeezeable" - the neutron star is, and therefore what it is made of.
+
+A softer equation of state would suggest that neutrons in the core are breaking apart into an exotic soup of smaller particles. A harder equation of state might mean neutrons resist, leading to larger neutron stars.
+
+The equation of state also dictates how and when neutron stars get ripped apart when they collide.
+
+One of NICER's primary targets is a neutron star called PSR J0437-4715, which is the nearest and brightest millisecond pulsar.
+
+A pulsar is a neutron star that emits beams of radio waves that we observe as a pulse every time the neutron star rotates.
+
+This particular pulsar rotates 173 times per second (as fast as a blender). We have been observing it for almost 30 years with Murriyang, CSIRO's Parkes radio telescope in New South Wales.
+
+The team working with NICER data faced a challenge for this pulsar. X-rays coming from a nearby galaxy made it hard to accurately model the hot spots on the neutron star's surface.
+
+Fortunately, we were able to use radio waves to find an independent measurement of the pulsar's mass. Without this crucial information, the team would not have recovered the correct mass.
+
+To measure the neutron star's mass, we rely on an effect described by Einstein's theory of general relativity, called the Shapiro delay.
+
+Massive and dense objects such as pulsars - and in this case its companion star, a white dwarf - warp space and time. The pulsar and this companion orbit one another once every 5.74 days. When pulses from the pulsar travel to us across the compressed spacetime surrounding the white dwarf, they are delayed by microseconds.
+
+Such microsecond delays are easy to measure with Murriyang from pulsars like PSR J0437-4715. This pulsar, and other millisecond pulsars like it, are observed regularly by the Parkes Pulsar Timing Array project, which uses these pulsars to detect gravitational waves.
+
+Because PSR J0437-4715 is relatively close to us, its orbit appears to wobble slightly from our point of view as Earth moves around the Sun. This wobble gives us more details about the geometry of the orbit. We use this together with the Shapiro delay to find the masses of the white-dwarf companion and the pulsar.
+
+We calculated that the mass of this pulsar is typical of a neutron star, at 1.42 times the mass of our Sun. That's important because the size of this pulsar should also be the size of a typical neutron star.
+
+Scientists working with the NICER data were then able to determine the geometry of the X-ray hot spots and calculate that the neutron star's radius is 11.4 kilometres. These results give the most precise anchor point yet found for the neutron star equation of state at intermediate densities.
+
+Our new picture already rules out the softest and hardest neutron star equations of state. Scientists will continue to decode exactly what this means for the presence of exotic matter in the inner cores of neutron stars. Theories suggest this matter may include quarks that have escaped their normal homes inside larger particles, or rare particles known as hyperons.
+
+This new data adds to an emerging model of neutron star interiors that has also been informed by observations of gravitational waves from colliding neutron stars and an associated explosion called a kilonova.
+
+Murriyang has a long history of assisting with NASA missions, and was famously used as the primary receiver of footage for most of the Apollo 11 moonwalk. Now, we have used this iconic telescope to "weigh in" on the physics of neutron star interiors, advancing our fundamental understanding of the universe.
+
+
+
+Link to study: [https://iopscience.iop.org/article/10.3847/2041-8213/ad614a/pdf](https://iopscience.iop.org/article/10.3847/2041-8213/ad614a/pdf)
