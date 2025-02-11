@@ -11,8 +11,9 @@ import {
   InstagramIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoShuttle from '@/images/logos/open-shuttle.svg'
+import logoSwinburne from '@/images/logos/swinburne.svg'
+import logoMonash from '@/images/logos/monash.svg'
+import logoMPI from '@/images/logos/mpi.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -136,18 +137,32 @@ function Resume() {
   let resume = [
     {
       company: 'Swinburne University of Technology',
-      title: 'Postdoctoral Researcher',
-      logo: logoPlanetaria,
-      start: '2018',
+      title: 'Senior OzGrav Postdoctoral Researcher',
+      logo: logoSwinburne,
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
+      company: 'Albert Einstein Institute (Hannover)',
+      title: 'Guest Researcher',
+      logo: logoMPI,
+      start: 'Aug 2024',
+      end: 'Nov 2024',
+    },
+    {
+      company: 'Swinburne University of Technology',
+      title: 'OzGrav Postdoctoral Researcher',
+      logo: logoSwinburne,
+      start: '2018',
+      end: '2024',
+    },
+    {
       company: 'Monash University',
       title: 'PhD Candidate',
-      logo: logoShuttle,
+      logo: logoMonash,
       start: '2014',
       end: '2018',
     },
@@ -229,35 +244,43 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Dr. Daniel Reardon - Postdoctoral Researcher at Swinburne University
-          of Technology
+          Dr. Daniel J. Reardon - Astrophysicist at Swinburne University of Technology
         </title>
         <meta
           name="description"
-          content="As a member of OzGrav in the pulsar timing division, I work with
-          pulsar timing array data to search for nanohertz-frequency
+          content="Daniel is a postdoctoral researcher with OzGrav, working with
+          pulsar timing array data to detect and study nanohertz-frequency
           gravitational waves."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Postdoctoral Researcher at Swinburne University of Technology
+            Daniel Reardon - Astrophysicist
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            As a member of OzGrav in the pulsar timing division, I work with
-            pulsar timing array data to search for nanohertz-frequency
-            gravitational waves. These waves are emitted for example by
-            supermassive black hole binaries in the cores of distant galaxies.
-            The eventual detection of these waves will depend on a precise
-            understanding of the pulsars themselves, and of sources of noise
-            including the interstellar plasma along our line-of-sight. My work
-            involves improving pulsar models through the techniques of pulsar
-            timing and interstellar scintillometry. Studying the interstellar
-            scintillation of pulsars also reveals structures in the interstellar
-            plasma that lead to noise in pulsar timing data. I am working with
-            new techniques, based on modelling scintillation, to correct our
-            timing data for this source of noise.
+           Daniel is a senior postdoctoral researcher in Swinburne's 
+           Centre for Astrophysics and Supercomputing (CAS), working as part of 
+           the ARC Centre of Excellence for Gravitaitonal Wave Discovery (OzGrav). 
+
+           His primary research interest is the precision timing pulsars to understand 
+           extreme and fundamental physics. Daniel observes pulsars using some of the best 
+           radio telescopes in the world, to explore the properties of neutron star matter and 
+           search for gravitational waves (GWs).
+
+           Daniel is a leader of the Parkes Pulsar Timing Array (PPTA) collaboration, which is 
+           the longest-running pulsar timing array project in the world. The PPTA uses Murriyang, 
+           CSIRO's 64-m radio telescope in Parkes, to regularly observe millisecond pulsars. 
+           The goal is to use these pulsars to detect and study ultra-low-frequency GWs 
+           emitted by supermassive black hole binary systems. 
+
+           Daniel currently serves as chair of the International Pulsar Timing Array (IPTA) 
+           Steering Committee and is a foundational member of the MeerKAT Pulsar Timing Array (MPTA), 
+           which is also searching for GWs using the MeerKAT radio telescope in South Africa.
+
+           In his spare time Daniel trains for ultra endurance races including Ironman triathlons 
+           and trail ultramarathons. In 2022 he qualified for, and competed in, the Ironman world championship 
+           in Kona, Hawaii.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
