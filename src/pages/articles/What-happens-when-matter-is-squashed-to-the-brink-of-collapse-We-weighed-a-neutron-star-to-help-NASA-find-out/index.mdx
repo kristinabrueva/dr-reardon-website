@@ -1,15 +1,18 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
-import supernova from './NICER-Landscape.jeg'
+import supernova from './NICERLandscape.jpg'
 
 export const meta = {
   author: 'Daniel Reardon',
   date: '2025-02-11',
   image:
-    '../pages/articles/What-happens-when-matter-is-squashed-to-the-brink-of-collapse?-We-weighed-a-neutron-star-to-help-NASA-find-out/NICER-Landscape.jpeg',
+    '../pages/articles/What-happens-when-matter-is-squashed-to-the-brink-of-collapse-We-weighed-a-neutron-star-to-help-NASA-find-out/NICERLandscape.jpg',
   title: 'What happens when matter is squashed to the brink of collapse? We weighed a neutron star to help NASA find out',
   description:
-    'Neutron stars are some of the most extreme objects in the universe. Formed from the collapsed cores of supergiant stars, they weigh more than our Sun and yet are compressed into a sphere the size of a city. The dense cores of these exotic stars contain matter squashed into unique states that we can’t possibly replicate and study on Earth. That's why NASA is on a mission to study neutron stars and learn about the physics that governs the matter inside them. My colleagues and I have been helping them out. We used radio signals from a fast-spinning neutron star to measure its mass. This enabled scientists working with NASA data to measure the star's radius, which in turn gave us the most precise information yet about the strange matter inside.',
+    `Neutron stars are some of the most extreme objects in the universe. Formed from the collapsed cores of supergiant stars, they weigh more than our Sun and yet are compressed into a sphere the size of a city. The dense cores of these exotic 
+stars contain matter squashed into unique states that we can\'t possibly replicate and study on Earth. That\'s why NASA is on a mission to study neutron stars and learn about the physics that governs the matter inside them. My colleagues and I 
+have been helping them out. We used radio signals from a fast-spinning neutron star to measure its mass. This enabled scientists working with NASA data to measure the star\'s radius, which in turn gave us the most precise information yet about 
+the strange matter inside.`,
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
