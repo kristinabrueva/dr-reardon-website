@@ -263,7 +263,7 @@ export default function Home({ articles }) {
            Centre for Astrophysics and Supercomputing (CAS), working as part of 
            the ARC Centre of Excellence for Gravitaitonal Wave Discovery (OzGrav). 
 
-           His primary research interest is the precision timing pulsars to understand 
+           His primary research interest is the precision timing of pulsars to understand 
            extreme and fundamental physics. Daniel observes pulsars using some of the best 
            radio telescopes in the world, to explore the properties of neutron star matter and 
            search for gravitational waves (GWs).
