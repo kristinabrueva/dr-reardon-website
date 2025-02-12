@@ -259,7 +259,7 @@ export default function Home({ articles }) {
             Daniel Reardon - Astrophysicist
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-           Daniel is a senior postdoctoral researcher in Swinburne\'s 
+           Daniel is a senior postdoctoral researcher in Swinburne&rsquo;s 
            Centre for Astrophysics and Supercomputing (CAS), working as part of 
            the ARC Centre of Excellence for Gravitaitonal Wave Discovery (OzGrav). 
 
@@ -270,7 +270,7 @@ export default function Home({ articles }) {
 
            Daniel is a leader of the Parkes Pulsar Timing Array (PPTA) collaboration, which is 
            the longest-running pulsar timing array project in the world. The PPTA uses Murriyang, 
-           CSIRO\'s 64-m radio telescope in Parkes, to regularly observe millisecond pulsars. 
+           CSIRO&rsquo;s 64-m radio telescope in Parkes, to regularly observe millisecond pulsars. 
            The goal is to use these pulsars to detect and study ultra-low-frequency GWs 
            emitted by supermassive black hole binary systems. 
 
