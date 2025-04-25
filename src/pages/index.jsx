@@ -300,7 +300,7 @@ export default function Home({ articles }) {
             />
             <SocialLink
               href="mailto:dreardon@swin.edu.au"
-              aria-label="Follow on Instagram"
+              aria-label="Email"
               icon={MailIcon}
             >
               dreardon@swin.edu.au
