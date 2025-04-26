@@ -18,6 +18,7 @@ import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
+import image5 from '@/images/photos/image-5.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -83,7 +84,19 @@ function ArrowDownIcon(props) {
 
 function Article({ article }) {
   return (
-    <Card as="article">
+    <Card as="article" className="group">
+      {article.image && (
+        <div className="relative z-10 overflow-hidden rounded-lg">
+          <Image
+            src={article.image}
+            alt={article.title}
+            width={600}
+            height={300}
+            className="rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-105 pointer-events-none"
+            style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
+          />
+        </div>
+      )}
       <Card.Title href={`/articles/${article.slug}`}>
         {article.title}
       </Card.Title>
@@ -95,6 +108,7 @@ function Article({ article }) {
     </Card>
   )
 }
+
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -218,7 +232,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4].map((image, imageIndex) => (
+        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -334,7 +348,7 @@ export async function getStaticProps() {
   return {
     props: {
       articles: (await getAllArticles())
-        .slice(0, 4)
+        .slice(0, 3)
         .map(({ component, ...meta }) => meta),
     },
   }

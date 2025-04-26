@@ -1,12 +1,11 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
-import supernova from './BowShock.jpg'
+import BowShock from './BowShock.jpg'
 
 export const meta = {
   author: 'Daniel Reardon',
   date: '2025-04-25',
-  image:
-    '../pages/articles/Twinkling-star-reveals-the-shocking-secrets-of-turbulent-plasma-in-our-cosmic-neighbourhood/BowShock.jpg',
+  image: BowShock,
   title: 'Twinkling star reveals the shocking secrets of turbulent plasma in our cosmic neighbourhood',
   description:
     `With the most powerful radio telescope in the southern hemisphere, we have observed a twinkling star and discovered an abundance of mysterious plasma structures in our cosmic neighbourhood. 
@@ -109,19 +108,29 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 <p>This will uncover more about the energetic processes in our galaxy that create these otherwise invisible plasma structures.</p>
 
-<p>The scintillation of this pulsar neighbour revealed unexpected plasma structures inside our Local Bubble and allowed us to map and measure the speed of plasma within a bow shock. It’s amazing what a twinkling little star can do\! <img src="https://counter.theconversation.com/content/243022/count.gif?distributor=republish-lightbox-basic" alt="The Conversation" width="1" height="1" style={{
-    border: "none",
-    boxShadow: "none",
-    margin: 0,
-    maxHeight: "1px",
-    maxWidth: "1px",
-    minHeight: "1px",
-    minWidth: "1px",
-    opacity: 0,
-    outline: "none",
-    padding: 0,
+<p>The scintillation of this pulsar neighbour revealed unexpected plasma structures inside our Local Bubble and allowed us to map and measure the speed of plasma within a bow shock. It’s amazing what a twinkling little star can do\!</p> 
+
+{/* Below is The Conversation's page counter tag. Please DO NOT REMOVE. */}
+<img
+  src="https://counter.theconversation.com/content/243022/count.gif?distributor=republish-lightbox-basic"
+  alt="The Conversation"
+  width="1"
+  height="1"
+  style={{ 
+    border: 'none', 
+    boxShadow: 'none', 
+    margin: 0, 
+    maxHeight: '1px', 
+    maxWidth: '1px', 
+    minHeight: '1px', 
+    minWidth: '1px', 
+    opacity: 0, 
+    outline: 'none', 
+    padding: 0 
   }}
-  referrerpolicy="no-referrer-when-downgrade" /></p>
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+{/* End of code */}
 
   <p><span><a href="https://theconversation.com/profiles/daniel-reardon-1418102">Daniel Reardon</a>, Postdoctoral Researcher, Pulsar Timing and Gravitational Waves, <em><a href="https://theconversation.com/institutions/swinburne-university-of-technology-767">Swinburne University of Technology</a></em></span></p>
 
