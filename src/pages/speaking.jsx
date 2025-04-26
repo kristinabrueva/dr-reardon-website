@@ -103,6 +103,11 @@ export default function Speaking() {
             title="MeerKAT pulsar timing workshop"
             event="2021 virtual -- see projects page for Link"
           />
+
+          <Appearance
+            title="Vonunteer Python-language coding mentor"
+            event="2023 She Codes, Australia"
+          />
         </SpeakingSection>
 
         <SpeakingSection title="Conferences" className="mt-24">
