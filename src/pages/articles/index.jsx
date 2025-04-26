@@ -4,11 +4,24 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { formatDate } from '@/lib/formatDate'
 import { getAllArticles } from '@/lib/getAllArticles'
+import Image from 'next/image'
 
 function Article({ article }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
-      <Card className="md:col-span-3">
+      <Card className="group md:col-span-3 space-y-4">
+        {article.image && (
+          <div className="relative z-10 overflow-hidden rounded-lg">
+            <Image
+              src={article.image}
+              alt={article.title}
+              width={400}
+              height={200}
+              className="rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-105 pointer-events-none"
+              style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
+            />
+          </div>
+        )}
         <Card.Title href={`/articles/${article.slug}`}>
           {article.title}
         </Card.Title>

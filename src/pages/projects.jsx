@@ -16,8 +16,29 @@ const projects = [
       'A python package of tools for the analysis of pulsar scintillation data.',
     link: { href: 'https://github.com/danielreardon/scintools' },
     logo: 'https://img.icons8.com/?size=512&id=YbJDd2a2xegM&format=png',
+    linkLabel: 'GitHub',
+    logoSize: 32,
+  },
+  {
+    name: 'NWU Pulsar Timing Workshop 2023',
+    description:
+      'A pulsar timing workshop held at North-West University in Potchefstroom, South Africa.',
+    link: { href: 'https://nwupulsar2023.github.io/index.html' },
+    logo: 'https://nwupulsar2023.github.io/img/nwu-logo.png',
+    linkLabel: 'Visit Workshop Site',
+    logoSize: 48,
+  },
+  {
+    name: 'MeerKAT Pulsar Timing Workshop',
+    description:
+      'A 2021 virtual workshop on pulsar timing using data from the MeerKAT telescope in South Africa.',
+    link: { href: 'https://www.sarao.ac.za/courses/meerkat-pulsar-timing-workshop/' },
+    logo: 'https://www.sarao.ac.za/wp-content/uploads/2020/10/sarao_logo.png',
+    linkLabel: 'Visit Workshop Site',
+    logoSize: 48,
   },
 ]
+
 
 function LinkIcon(props) {
   return (
@@ -37,7 +58,7 @@ export default function Projects() {
         <title>Projects - Daniel Reardon</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Things I’ve made while trying to understand the universe."
         />
       </Head>
       <SimpleLayout>
@@ -50,8 +71,8 @@ export default function Projects() {
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0">
                 <Image
                   src={project.logo}
-                  width={32}
-                  height={32}
+                  width={project.logoSize}
+                  height={project.logoSize}
                   alt=""
                   unoptimized
                 />
@@ -62,7 +83,7 @@ export default function Projects() {
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2">Github</span>
+                <span className="ml-2">{project.linkLabel}</span>
               </p>
             </Card>
           ))}

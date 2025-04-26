@@ -1,12 +1,11 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 import Image from 'next/image'
-import supernova from './pta.jpeg'
+import pta from './pta.jpeg'
 
 export const meta = {
   author: 'Daniel Reardon',
   date: '2023-11-16',
-  image:
-    '../pages/articles/first-hints-of-gravitational-waves-from-supermassive-black-hole-pairs/pta.jpeg',
+  image: pta,
   title: 'First hints of gravitational waves from supermassive black hole pairs',
   description:
     'When black holes and other enormously massive, dense objects whirl around one another, they send out ripples in space and time called gravitational waves. These waves are one of the few ways we have to study the enigmatic cosmic giants that create them. Astronomers have observed the high-frequency “chirps” of colliding black holes, but the ultra-low-frequency rumble of supermassive black holes orbiting one another has proven harder to detect. For decades, we have been observing pulsars, a type of star that pulses like a lighthouse, in search of the faint rippling of these waves. In June 2023, pulsar research collaborations around the world – including ours, the Parkes Pulsar Timing Array – announced their strongest evidence yet for the existence of these waves.',
@@ -14,78 +13,118 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-<figure>
-  <center>
-    <Image src={supernova} alt="Artist's illustration of a pulsar timing array" />
-  </center>
-  <figcaption align="center">
-    Artist's impression of a pulsar timing array sitting in the rippling of spacetime by supermassive black holes. Credit: Carl Knox, OzGrav-Swinburne University
-  </figcaption>
-</figure>
+<div class="theconversation-article-body">
 
-When black holes and other enormously massive, dense objects whirl around one another, they send out ripples in space and time called gravitational waves. These waves are one of the few ways we have to study the enigmatic cosmic giants that create them.
+  <figure>
+   <Image
+    src={pta}
+    alt="Artist’s impression of a pulsar bow shock scattering a radio beam"
+            width={1200}
+            height={800}
+            style={{ width: '100%', height: 'auto' }}
+            className="rounded-lg"
+          />
+          <figcaption>
+            Artist’s impression of a pulsar bow shock scattering a radio beam.
+            <span className="attribution">
+              <span className="source">Carl Knox/Swinburne/OzGrav</span>
+            </span>
+          </figcaption>
+        </figure>
 
-Astronomers have observed the high-frequency “chirps” of colliding black holes, but the ultra-low-frequency rumble of supermassive black holes orbiting one another has proven harder to detect. For decades, we have been observing pulsars, a type of star that pulses like a lighthouse, in search of the faint rippling of these waves.
+  <span><a href="https://theconversation.com/profiles/daniel-reardon-1418102">Daniel Reardon</a>, <em><a href="https://theconversation.com/institutions/swinburne-university-of-technology-767">Swinburne University of Technology</a></em> and <a href="https://theconversation.com/profiles/andrew-zic-1178284">Andrew Zic</a>, <em><a href="https://theconversation.com/institutions/csiro-1035">CSIRO</a></em></span>
 
-In June 2023, pulsar research collaborations around the world – including ours, the Parkes Pulsar Timing Array – announced their strongest evidence yet for the existence of these waves.
+  <p>When black holes and other enormously massive, dense objects whirl around one another, they send out ripples in space and time called <a href="https://theconversation.com/explainer-what-are-gravitational-waves-53239">gravitational waves</a>. These waves are one of the few ways we have to study the enigmatic cosmic giants that create them.</p>
 
-## What are gravitational waves?
+<p>Astronomers have observed the high-frequency “chirps” of colliding black holes, but the ultra-low-frequency rumble of supermassive black holes orbiting one another has proven harder to detect. For decades, we have been observing <a href="https://theconversation.com/explainer-what-is-a-neutron-star-29341">pulsars</a>, a type of star that pulses like a lighthouse, in search of the faint rippling of these waves.</p>
 
-In 1915, German-born physicist Albert Einstein presented a breakthrough insight into the nature of gravity: the general theory of relativity.
+<p>Today, pulsar research collaborations around the world – including ours, the <a href="https://www.atnf.csiro.au/research/pulsar/ppta/">Parkes Pulsar Timing Array</a> – announced their <a href="https://doi.org/10.3847/2041-8213/acdd02">strongest evidence yet</a> for the existence of these waves.</p>
 
-The theory describes the Universe as a four-dimensional “fabric” called spacetime that can stretch, squeeze, bend and twist. Massive objects distort this fabric to give rise to gravity.
+<h2>What are gravitational waves?</h2>
 
-A curious consequence of the theory is that the motion of massive objects should produce ripples in this fabric, called gravitational waves, which spread at the speed of light.
+<p>In 1915, German-born physicist Albert Einstein presented a breakthrough insight into the nature of <a href="https://theconversation.com/explainer-gravity-5256">gravity</a>: the general theory of relativity.</p>
 
-It takes an enormous amount of energy to create the tiniest of these ripples. For this reason, Einstein was convinced gravitational waves would never be directly observed.
+<p>The theory describes the Universe as a four-dimensional “fabric” called spacetime that can stretch, squeeze, bend and twist. Massive objects distort this fabric to give rise to gravity.</p>
 
-A century later, researchers from the LIGO and Virgo collaborations witnessed the collision of two black holes, which sent a burst of gravitational waves chirping throughout the Universe.
-
-Now, seven years after this discovery, radio astronomers from Australia, China, Europe, India, and North America have found evidence for ultra-low-frequency gravitational waves.
-
-## A slow rumbling of gravitational waves
-
-Unlike the sudden burst of gravitational waves reported in 2016, these ultra-low-frequency gravitational waves take years or even decades to oscillate.
-
-They are expected to be produced by pairs of supermassive black holes, orbiting at the cores of distant galaxies throughout the Universe. To find these gravitational waves, scientists would need to construct a detector the size of a galaxy.
-
-Or we can use pulsars, which are already spread across the galaxy, and whose pulses arrive at our telescopes with the regularity of precise clocks.
-
-CSIRO’s Parkes radio telescope, Murriyang, has been observing an array of these pulsars for almost two decades. Our Parkes Pulsar Timing Array team is one of several collaborations around the world that have today announced hints of gravitational waves in their latest data sets.
-
-Other collaborations in China (CPTA), Europe and India (EPTA and InPTA), and North America (NANOGrav) see similar signals.
-
-The signal we are searching for is a random “ocean” of gravitational waves produced by all the pairs of supermassive black holes in the Universe.
-
-Observing these waves is not only another triumph of Einstein’s theory, but has important consequences for our understanding of the history of galaxies in the Universe. Supermassive black holes are the engines at the heart of galaxies that feed on gas and regulate star formation.
-
-The signal appears as a low-frequency rumble, common to all pulsars in the array. As the gravitational waves wash over Earth, they affect the apparent rotation rates of the pulsars.
-
-The stretching and squeezing of our galaxy by these waves ultimately changes the distances to the pulsars by just tens of metres. That’s not much when the pulsars are typically about 1,000 light-years away (that’s about 10,000,000,000,000,000,000 metres).
-
-Remarkably, we can observe these shifts in spacetime as nanosecond delays to the pulses, which radio astronomers can track with relative ease because pulsars are such stable natural clocks.
-
-## What has been announced?
-
-Because the ultra-low-frequency gravitational waves take years to oscillate, the signal is expected to emerge slowly.
-
-First, radio astronomers observed a common rumble in the pulsars, but its origin was unknown.
-
-Now, the unique fingerprint of gravitational waves is beginning to appear as an attribute of this signal, observed by each of the pulsar timing array collaborations around the world.
-
-This fingerprint describes a particular relationship between the similarity of pulse delays and the separation angle between pulsar pairs on the sky.
-
-The relationship arises because spacetime at Earth is stretched, changing the distances to pulsars in a way that depends on their direction. Pulsars close together in the sky show a more similar signal than pulsars separated at right angles, for example.
-
-The breakthrough has been enabled by improved technology at our observatories. The Parkes Pulsar Timing Array has the longest high-quality data set, thanks to the advanced receiver and signal processing technology installed on Murriyang. This technology has enabled the telescope to discover many of the best pulsars used by collaborations around the globe for the gravitational wave searches.
-
-Earlier results from our collaboration and others showed the signal expected from gravitational waves was missing from pulsar observations.
-
-Now, we seem to be seeing the signal with relative clarity. By segmenting our long data set into shorter “time-slices”, we show the signal appears to be growing with time. The underlying cause of this observation is unknown, but it may be that the gravitational waves are behaving unexpectedly.
-
-The new evidence for ultra-low-frequency gravitational waves is exciting for astronomers. To confirm these signatures, the global collaborations will need to combine their data sets, which increases their sensitivity to gravitational waves many-fold.
-
-Efforts to produce this combined data set are now in progress under the International Pulsar Timing Array project, whose members met in Port Douglas in Far North Queensland in June 2023. Future observatories, like the Square Kilometre Array under construction in Australia and South Africa, will turn these studies into a rich source of knowledge about the history of our Universe.
+<p>A curious consequence of the theory is that the motion of massive objects should produce ripples in this fabric, called gravitational waves, which spread at the speed of light.</p>
 
 
-Link to study: [https://iopscience.iop.org/article/10.3847/2041-8213/acdd02](https://iopscience.iop.org/article/10.3847/2041-8213/acdd02)
+
+<p>It takes an enormous amount of energy to create the tiniest of these ripples. For this reason, Einstein was convinced gravitational waves would never be directly observed. </p>
+
+<p>A century later, researchers from the LIGO and Virgo collaborations witnessed the <a href="https://theconversation.com/gravitational-waves-discovered-top-scientists-respond-53956">collision of two black holes</a>, which sent a burst of gravitational waves <a href="https://theconversation.com/explainer-why-you-can-hear-gravitational-waves-when-things-collide-in-the-universe-92356">chirping</a> throughout the Universe.</p>
+
+<p>Now, seven years after this discovery, radio astronomers from Australia, China, Europe, India, and North America have found evidence for ultra-low-frequency gravitational waves.</p>
+
+<h2>A slow rumbling of gravitational waves</h2>
+
+<p>Unlike the sudden burst of gravitational waves reported in 2016, these ultra-low-frequency gravitational waves take years or even decades to oscillate. </p>
+
+<p>They are expected to be produced by <a href="https://theconversation.com/when-galaxies-collide-the-growth-of-supermassive-black-holes-19321">pairs of supermassive black holes</a>, orbiting at the cores of distant galaxies throughout the Universe. To find these gravitational waves, scientists would need to construct a detector the size of a galaxy. </p>
+
+
+
+<p>Or we can use pulsars, which are already spread across the galaxy, and whose pulses arrive at our telescopes with the regularity of precise clocks.</p>
+
+<p>CSIRO’s Parkes radio telescope, <a href="https://blog.csiro.au/parkes-telescope-indigenous-name/">Murriyang</a>, has been observing an array of these pulsars for almost two decades. Our <a href="https://www.atnf.csiro.au/research/pulsar/ppta/">Parkes Pulsar Timing Array</a> team is one of several collaborations around the world that have <a href="https://doi.org/10.3847/2041-8213/acdd02">today announced</a> hints of gravitational waves in their latest data sets. </p>
+
+<p>Other collaborations in China (CPTA), Europe and India (EPTA and InPTA), and North America (NANOGrav) see similar signals.</p>
+
+<p>The signal we are searching for is a random “ocean” of gravitational waves produced by all the pairs of supermassive black holes in the Universe. </p>
+
+<p>Observing these waves is not only another triumph of Einstein’s theory, but has important consequences for our understanding of the history of galaxies in the Universe. Supermassive black holes are the engines at the heart of galaxies that feed on gas and regulate star formation.</p>
+
+<p>The signal appears as a low-frequency rumble, common to all pulsars in the array. As the gravitational waves wash over Earth, they affect the apparent rotation rates of the pulsars.</p>
+
+<p>The stretching and squeezing of our galaxy by these waves ultimately changes the distances to the pulsars by just tens of metres. That’s not much when the pulsars are typically about 1,000 light-years away (that’s about 10,000,000,000,000,000,000 metres).</p>
+
+<p>Remarkably, we can observe these shifts in spacetime as nanosecond delays to the pulses, which radio astronomers can track with relative ease because pulsars are such stable natural clocks.</p>
+
+<h2>What has been announced?</h2>
+
+<p>Because the ultra-low-frequency gravitational waves take years to oscillate, the signal is expected to emerge slowly. </p>
+
+<p>First, radio astronomers observed a <a href="https://doi.org/10.3847/2041-8213/abd401">common rumble</a> in the pulsars, but its origin was unknown. </p>
+
+<p>Now, the unique fingerprint of gravitational waves is beginning to appear as an attribute of this signal, observed by each of the pulsar timing array collaborations around the world. </p>
+
+<p>This fingerprint describes a particular relationship between the similarity of pulse delays and the separation angle between pulsar pairs on the sky. </p>
+
+<p>The relationship arises because spacetime at Earth is stretched, changing the distances to pulsars in a way that depends on their direction. Pulsars close together in the sky show a more similar signal than pulsars separated at right angles, for example.</p>
+
+<p>The breakthrough has been enabled by improved technology at our observatories. The Parkes Pulsar Timing Array has the longest high-quality data set, thanks to the advanced receiver and signal processing technology installed on Murriyang. This technology has enabled the telescope to discover many of the best pulsars used by collaborations around the globe for the gravitational wave searches.</p>
+
+<p>Earlier results from our collaboration and others showed the signal expected from gravitational waves <a href="https://theconversation.com/where-are-the-missing-gravitational-waves-47940">was missing from pulsar observations</a>. </p>
+
+<p>Now, we seem to be seeing the signal with relative clarity. By segmenting our long data set into shorter “time-slices”, we show the signal appears to be growing with time. The underlying cause of this observation is unknown, but it may be that the gravitational waves are behaving unexpectedly.</p>
+
+<p>The new evidence for ultra-low-frequency gravitational waves is exciting for astronomers. To confirm these signatures, the global collaborations will need to combine their data sets, which increases their sensitivity to gravitational waves many-fold. </p>
+
+<p>Efforts to produce this combined data set are now in progress under the <a href="https://ipta4gw.org/">International Pulsar Timing Array</a> project, whose members met in Port Douglas in Far North Queensland last week. Future observatories, like the Square Kilometre Array under construction in Australia and South Africa, will turn these studies into a rich source of knowledge about the history of our Universe.</p>
+
+{/* Below is The Conversation's page counter tag. Please DO NOT REMOVE. */}
+<img
+  src="https://counter.theconversation.com/content/208484/count.gif?distributor=republish-lightbox-basic"
+  alt="The Conversation"
+  width="1"
+  height="1"
+  style={{ 
+    border: 'none', 
+    boxShadow: 'none', 
+    margin: 0, 
+    maxHeight: '1px', 
+    maxWidth: '1px', 
+    minHeight: '1px', 
+    minWidth: '1px', 
+    opacity: 0, 
+    outline: 'none', 
+    padding: 0 
+  }}
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+{/* End of code */}
+
+  <p><span><a href="https://theconversation.com/profiles/daniel-reardon-1418102">Daniel Reardon</a>, Postdoctoral researcher in pulsar timing and gravitational waves, <em><a href="https://theconversation.com/institutions/swinburne-university-of-technology-767">Swinburne University of Technology</a></em> and <a href="https://theconversation.com/profiles/andrew-zic-1178284">Andrew Zic</a>, Research scientist, <em><a href="https://theconversation.com/institutions/csiro-1035">CSIRO</a></em></span></p>
+
+  <p>This article is republished from <a href="https://theconversation.com">The Conversation</a> under a Creative Commons license. Read the <a href="https://theconversation.com/using-a-detector-the-size-of-a-galaxy-astronomers-find-strongest-evidence-yet-for-gravitational-waves-from-supermassive-black-hole-pairs-208484">original article</a>.</p>
+</div>
